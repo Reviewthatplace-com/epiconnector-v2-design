@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body
+{
+  font-family: 'Poppins', sans-serif;
+}
+
+.booknow
+{	
+
+	border-radius: 10px;
+	height: 40px;
+	background-color:#FF6F61;
+	color: white;
+	font-weight: 800;
+	margin-top: 15px;
+	border-color: #FAB0A8;
+	white-space: nowrap!important;
+}
+
+.booknow:hover
+{
+	background-color: white;
+	color: black;
+	font-weight: 800;
+}
+
+.appointment-data
+{
+	border: 5px solid #FF5252; 
+	background-color: white; 
+	margin-top: 5px;
+}
+
+.appointment-data h3
+{
+	color: #FF5252;
+}
+
+#location-sidebar
+{
+	border: none;
+	height: 86.3vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	text-align: start;
+}
+.locations
+{
+	font-size: 14px;
+	color:black;
+	margin-top: -15px;
+	padding-left: 5px;
+	margin-bottom: 8px;
+	margin-block-end: 2px;
+
+}
+
+.locationnames
+{
+	font-weight: 800;
+	font-size: larger;
+	margin-top: 5px;
+	color: black;
+	padding-left: 5px;
+
+}
+
+.icons
+{
+	color: white; 
+	background-color:#FF7869;
+	padding: 0px 5px 0px 5px;
+	font-size: 14px;
+	margin-left: 7px;
+
+}
+
+.single-location-div:nth-child(odd)
+{
+	margin-bottom: 10px;
+	background-color: #ECECEC;
+}
+
+.single-location-div:nth-child(even)
+{
+	margin-bottom: 10px;
+	background-color: white;
+}
+.single-location-div .col-4
+{
+	text-align: center;
+}
+
+#logoname
+{
+	height: 80px;
+	padding: 3px 0px;
+}
+
+#map
+{
+	width: 73vw;
+	height: 86.3vh;
+}
+
+.marginTop
+{
+	margin-top: 5px;
+}
+
+.numbers
+{
+	color: white; 
+	background-color:#FF7869;
+	padding: 0px 5px 0px 5px;
+	font-size: 14px;
+	margin-right: 5px;
+}
+
+@media (max-width: 1200px) {
+	#map {
+		width: 100%  !important;
+		height: 270px;
+	}
+}

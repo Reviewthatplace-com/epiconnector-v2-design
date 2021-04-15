@@ -1,0 +1,25 @@
+.description
+{
+	font-size: 16px;
+}
+.description i
+{
+	margin-right: 5px;
+}
+.description label
+{
+	font-size: large; font-weight: bold;
+}
+
+.description label span
+{
+	font-size: 30px;
+}
+label.coming-soon
+{
+	font-size: 30px; color: #ff6f61 !important; font-weight: bold;
+}
+.tse-scrollable
+{
+	overflow-y: scroll;
+}
