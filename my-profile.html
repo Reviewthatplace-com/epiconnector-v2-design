@@ -172,7 +172,12 @@
 
         .mt-20
         {
-            margin-top: 20px;
+            margin-top: 20px !important;
+        }
+
+        .mt-15
+        {
+            margin-top: 15px !important;
         }
 
         .mb-20
@@ -190,14 +195,14 @@
             margin-bottom: 30px;
         }
 
-        .ml-60
+        .ml-80
         {
-            margin-left: 60px;
+            margin-left: 80px;
         }
 
         .customTextSize
         {
-            font-size: 40px;
+            font-size: 35px;
         }
          
         .customTextSize1
@@ -209,8 +214,9 @@
          
         .customTextSize2
         {
-            font-size: 40px;
+            font-size: 30px;
             color: #00b44e; 
+            font-weight: 800;
         }
          
         .customTextSize3
@@ -227,13 +233,18 @@
          
         .customTextSize5
         {
-            font-size: 35px; 
+            font-size: 30px; 
             font-weight: 800;
         }
          
          .customTextSize6
          {
-             font-size: 28px; 
+             font-size: 22px; 
+         }
+         
+         .customTextSize7
+         {
+             font-size: 32px; 
          }
          
         .customPaddingbtn
@@ -301,7 +312,8 @@
                                 <div class="panel-layout">
                                     <div class="panel-box">
                                         <div class="panel-content image-box" >
-                                                    <img src="users/img/logo.png" style="height: 100px; margin-top: 15px;" alt="">
+                                            <img src="users/img/logo.png" style="height: 100px; margin-top: 15px;" alt="">
+                                            <p class="font-weight-bold font-size-26 mt-15">Born From <span class="customColor">Care</span>, Treated through <span class="customColor">Compassion</span>, Built for <span class="customColor">Community</span></p>
                                         </div>
                                          
                                         <ul class="list-group row list-group-icons mt-20">
@@ -349,36 +361,32 @@
                                         <button class="btn btn-success btn-block customPaddingbtn">Schedule Test</button>
                                         <div class="panel-content pad15A bg-white radius-bottom-all-4 mt-20">
                                             <div class="mrg15T mrg15B"></div>
-                                            <blockquote class="font-gray">
+                                            <blockquote class="">
                                                 <p class="customTextSize5 font-black mb-15">Upcoming Appointment</p>
                                                 <div class="botmBorder"></div>
-                                                <table class="ml-60">
+                                                <table class="table-condensed ml-80">
                                                     <tbody>
-                                                    <tr>
-                                                        <th><span class="font-weight-bold customTextSize6 left">Location:</span></th>
-                                                        <td class="text-right customTextSize6">Test Location</td>
-                                                    </tr>
+                                                        <tr>
+                                                            <th><span class="font-weight-bold customTextSize6">Location:</span></th>
+                                                            <td class="text-left customTextSize6">Test Location</td>
+                                                        </tr>
 
-                                                    <tr>
-                                                        <th><span class="font-weight-bold customTextSize6 left">Address:</span></th>
-                                                        <td class="text-right customTextSize6">Mukherjee chowk</td>
-                                                    </tr>
+                                                        <tr>
+                                                            <th><span class="font-weight-bold customTextSize6">Address:</span></th>
+                                                            <td class="text-left customTextSize6">Mukherjee chowk</td>
+                                                        </tr>
 
-                                                    <tr>
-                                                        <th><span class="font-weight-bold customTextSize6 left">Date:</span></th>
-                                                        <td class="text-right customTextSize6">02-02-2021</td>
-                                                    </tr>
+                                                        <tr>
+                                                            <th><span class="font-weight-bold customTextSize6">Date:</span></th>
+                                                            <td class="text-left customTextSize6">02-02-2021</td>
+                                                        </tr>
 
-                                                    <tr>
-                                                        <th><span class="font-weight-bold customTextSize6 left">Time:</span></th>
-                                                        <td class="text-right customTextSize6">02:00pm - 02:30pm</td>
-                                                    </tr>
+                                                        <tr>
+                                                            <th><span class="font-weight-bold customTextSize6">Time:</span></th>
+                                                            <td class="text-left customTextSize6">02:00pm - 02:30pm</td>
+                                                        </tr>
                                                     </tbody>
                                                 </table>
-                                                <!--<p class="customTextSize3"><span class="font-weight-bold">Location:</span> Test Location</p>
-                                                <p class="customTextSize3"><span class="font-weight-bold">Address:</span> Mukherjee chowk</p>
-                                                <p class="customTextSize3"><span class="font-weight-bold">Date:</span> 02-02-2021</p>
-                                                <p class="customTextSize3"><span class="font-weight-bold">Time:</span> 02:00pm - 02:30pm</p>-->
                                             </blockquote>
                                         </div>
 
@@ -386,22 +394,32 @@
                                             <div class="clear profile-box">
                                                 <ul class="nav nav-pills nav-justified">
                                                     <li>
-                                                        <a href="#" class="btn btn-sm bg-google">
-                                                            <span class="glyph-icon icon-separator">
-                                                                <i class="glyph-icon icon-google-plus"></i>
-                                                            </span>
-                                                            <span class="button-content">
-                                                                Google+
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
                                                         <a href="#" class="btn btn-sm bg-facebook">
                                                             <span class="glyph-icon icon-separator">
                                                                 <i class="glyph-icon icon-facebook"></i>
                                                             </span>
                                                             <span class="button-content">
                                                                 Facebook
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="btn btn-sm bg-instagram bg-red">
+                                                            <span class="glyph-icon icon-separator">
+                                                                <i class="glyph-icon icon-instagram"></i>
+                                                            </span>
+                                                            <span class="button-content">
+                                                                Instagram
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="btn btn-sm bg-linkedin bg-blue-alt">
+                                                            <span class="glyph-icon icon-separator">
+                                                                <i class="glyph-icon icon-linkedin"></i>
+                                                            </span>
+                                                            <span class="button-content">
+                                                                linkedin
                                                             </span>
                                                         </a>
                                                     </li>
@@ -418,11 +436,26 @@
                                                 </ul>
                                             </div>
                                             <div class="mrg15T mrg15B"></div>
-                                            <blockquote class="font-gray">
-                                                <h4>360 Clinic</h4>
-                                                <p>Email: inquiries@360clinic.md</p>
-                                                <p>Website: www.360clinic.md</p>
-                                                <p>Hotline: 1-800-446-8888</p>
+                                            <blockquote class="">
+                                                <p class="customTextSize5 font-black mb-20">360 Clinic</p>
+                                                <table class="table-condensed ml-80">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th><span class="font-weight-bold customTextSize6">Email:</span></th>
+                                                            <td class="text-left customTextSize6">inquiries@360clinic.md</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th><span class="font-weight-bold customTextSize6">Website:</span></th>
+                                                            <td class="text-left customTextSize6">www.360clinic.md</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th><span class="font-weight-bold customTextSize6">Hotline:</span></th>
+                                                            <td class="text-left customTextSize6">1-800-446-8888</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </blockquote>
                                         </div>
                                     </div>
@@ -570,77 +603,169 @@
                                                 </div>
 
                                                 <div class="col-md-12">
-                                                            <h1 class="font-weight-bold">Hello Ravi,</h1>
-                                                            <div class="botmBorder"></div>
+                                                    <h2 class="font-weight-bold">Hello Ravi,</h1>
+                                                    <div class="botmBorder"></div>
                                                 </div>
-
-
-                                                <div class="col-md-12">
-                                                            <div class="row">
-                                                            <div class="col-md-3"><h3 class="font-weight-bold">Patient Information</h3></div>
-                                                            <div class="col-md-3"><h3 class="font-weight-bold">Accession</h3></div>
-                                                            <div class="col-md-3"><h3 class="font-weight-bold">Physician</h3></div>
-                                                            <div class="col-md-3"><h3 class="font-weight-bold">Laboratory</h3></div>
-                                                            </div>
-                                                </div>
-
 
                                                 <div class="col-md-12" style="margin-top: 20px;">
-                                                            <div class="row">
-                                                            <div class="col-md-3">
-                                                                <p><span class="data">Full Name : </span><span>Ravi Agrawal</span></p>
-                                                                <p><span class="data">DOB : </span><span>123123</span></p>
-                                                                <p><span class="data">Patient ID : </span><span>123132123</span></p>
-                                                                <p><span class="data">Address : </span><span>ewrwerwer</span></p>
-                                                                <p><span class="data">PASSPORT/DRIVERS LICENSE NUMBER : </span><span>213123123</span></p>
-                                                                <p><span class="data">Phone : </span><span>213123123</span></p>
-                                                                <p><span class="data">Email : </span><span>12312312</span></p>
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <table class="table-responsive">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th><h3 class="font-weight-bold mb-20">Patient Information</h3></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">Full Name:</span></th>
+                                                                        <td class="text-left">Ravi Agrawal</td>
+                                                                    </tr>
+                
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">DOB:</span></th>
+                                                                        <td class="text-left">123123</td>
+                                                                    </tr>
+                
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">Patient ID:</span></th>
+                                                                        <td class="text-left">123123</td>
+                                                                    </tr>
+                
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">Address:</span></th>
+                                                                        <td class="text-left">123123</td>
+                                                                    </tr>
+                
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">PASSPORT/DRIVERS LICENSE NUMBER:</span></th>
+                                                                        <td class="text-left">123123</td>
+                                                                    </tr>
+                
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">Phone:</span></th>
+                                                                        <td class="text-left">123123</td>
+                                                                    </tr>
+                
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">Email:</span></th>
+                                                                        <td class="text-left">123123</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        
+                                                        <div class="col-md-3">
+                                                            <table class="table-responsive">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th><h3 class="font-weight-bold mb-20">Accession</h3></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">Test Kit#:</span></th>
+                                                                        <td class="text-left">asdasdasd</td>
+                                                                    </tr>
+                
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">Appointment ID:</span></th>
+                                                                        <td class="text-left">asdasdasd</td>
+                                                                    </tr>
+                
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">Test Type:</span></th>
+                                                                        <td class="text-left">asdasdasd</td>
+                                                                    </tr>
+                
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">Collection Type:</span></th>
+                                                                        <td class="text-left">asdasdasd</td>
+                                                                    </tr>
+                
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">Collected Date:</span></th>
+                                                                        <td class="text-left">asdasdasd</td>
+                                                                    </tr>
+                
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">Result Date:</span></th>
+                                                                        <td class="text-left">asdasdasd</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
 
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <p><span class="data">Test Kit # : </span><span>asdadasd</span></p>
-                                                                <p><span class="data">Appointment ID : </span><span>asdasdasd</span></p>
-                                                                <p><span class="data">Test Type : </span><span>dasdadad</span></p>
-                                                                <p><span class="data">Collection Type : </span><span>aasdaddasd</span></p>
-                                                                <p><span class="data">Test Type : </span><span>NAAT: RT-PCR</span></p>
-                                                                <p><span class="data">Collected Date : </span><span>dasdasd</span></p>
-                                                                <p><span class="data">Result Date : </span><span>asdadasd</span></p>
+                                                        <div class="col-md-3">
+                                                            <table class="table-responsive">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th><h3 class="font-weight-bold mb-20">Physician</h3></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">Name of Provider:</span></th>
+                                                                        <td class="text-left">Dr. Nguyen, Linh</td>
+                                                                    </tr>
+                
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">Location Name:</span></th>
+                                                                        <td class="text-left">123123</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
 
-                                                            </div>
-
-                                                            <div class="col-md-3">
-                                                                <p><span class="data">Name of Provider : </span><span>Dr. Nguyen, Linh</span></p>
-                                                                <!--<p><span class="data">ATTN : </span><span></span></p>-->
-                                                                <p><span class="data">Location Name : </span><span>asdadasd</span></p>
-                                                            </div>
-
-                                                            <div class="col-md-3">
-                                                                <p><span class="data">Testing Lab : </span><span>asdasdasd</span></p>
-                                                                <p><span class="data">CAP #: </span><span>asdasdasd</span></p>
-                                                                <p><span class="data">CLIA #: </span><span>asdasdasd</span></p>
-                                                                <p><span class="data">Laboratory Director : </span><span>asdadasd</span></p>
-                                                            </div>
-
-
-                                                            </div>
+                                                        <div class="col-md-3">
+                                                            <table class="table-responsive">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th><h3 class="font-weight-bold mb-20">Laboratory</h3></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">Testing Lab:</span></th>
+                                                                        <td class="text-left">asdasdasd</td>
+                                                                    </tr>
+                
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">CAP#:</span></th>
+                                                                        <td class="text-left">asdasdasd</td>
+                                                                    </tr>
+                
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">CLIA#:</span></th>
+                                                                        <td class="text-left">asdasdasd</td>
+                                                                    </tr>
+                
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">Laboratory Director#:</span></th>
+                                                                        <td class="text-left">asdasdasd</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
                                                 </div>
 
                                                 <div class="col-md-12">
-                                                            <div class="botmBorder"></div>
+                                                    <div class="botmBorder"></div>
                                                 </div>
                                                         
 
                                                 <div class="col-md-12" style="margin-bottom: 20px;">
-                                                            <div class="col-md-2">
-                                                                <img width="80" height="80" src="users/img/negative.PNG"  class="mt-3">
-                                                            </div>
-                                                            <div class="col-md-10">
-                                                                <div>
-                                                                    <h3 style="color: #00b44e; font-size: 50px; font-weight: bold;">NEGATIVE</h3>
-                                                                    <p>A negative result means that the virus was not detected in the sample you provided.
-                                                                        There suit suggests you were negative at the time of testing</p>
-                                                                </div>
-                                                            </div>
+                                                    <div class="col-md-2">
+                                                        <img width="80" height="80" src="users/img/negative.PNG"  class="mt-3">
+                                                    </div>
+                                                    <div class="col-md-10">
+                                                        <div>
+                                                            <h3 style="color: #00b44e; font-size: 50px; font-weight: bold;">NEGATIVE</h3>
+                                                            <p>A negative result means that the virus was not detected in the sample you provided.
+                                                                There suit suggests you were negative at the time of testing</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
 
                                                 <h4 class="font-weight-bold">HOW ACCURATE IS THE TEST?</h4>
@@ -995,47 +1120,45 @@
 
                                         <div class="tab-pane fade  active in" id="tab-example-5">
                                             <div class="row content-box pad25A">
-                                                <div class="col-xl-12">
+                                               <!--<div class="col-md-12">
                                                     <div class="row">
                                                         <div class="col-lg-2">
                                                             <img style="height: 70px; margin-bottom: 20px;" src="users/img/logo.png" alt="" id="logo" class="mt-3">
                                                         </div>
-                                                        <div class="col-lg">
-                                                            <p class="font-weight-bold font-size-26 text-center">Born From <span class="customColor">Care</span>, Treated through <span class="customColor">Compassion</span>, Built for <span class="customColor">Community</span></p>
+                                                        <div class="col-md-12">
+                                                            <p class="font-weight-bold font-size-26">Born From <span class="customColor">Care</span>, Treated through <span class="customColor">Compassion</span>, Built for <span class="customColor">Community</span></p>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div>-->
 
                                                 <div class="col-md-12">
                                                     <p class="font-weight-bold customTextSize">Welcome Ravi</p>
                                                     <div class="botmBorder"></div>
                                                 </div>
+                                                
+                                                <div class="col-md-12">
+                                                    <table class="table-condensed">
+                                                        <tbody>
+                                                        <tr>
+                                                            <th><span class="font-weight-bold customTextSize7">Last Test Date:</span></th>
+                                                            <td class="customTextSize7">04/26/21</td>
+                                                        </tr>
 
-                                                <div class="col-md-12 mb-20">
-                                                    <div class="row">
-                                                        <div class="col-md-4"><h1 class="font-weight-bold">Last Test Date:</h1></div>
-                                                        <div class="col-md-3"><h1 class="font-weight-bold">04/26/21</h1></div>
-                                                    </div>
+                                                        <tr>
+                                                            <th><span class="font-weight-bold customTextSize7">Last Test Location:</span></th>
+                                                            <td class="customTextSize7">Arizona</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <th><span class="font-weight-bold customTextSize7">Last Test Result:</span></th>
+                                                            <td class="customTextSize2">NEGATIVE</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
 
-                                                <div class="col-md-12 mb-20">
-                                                    <div class="row">
-                                                        <div class="col-md-4"><h1 class="font-weight-bold">Last Test Location:</h1></div>
-                                                        <div class="col-md-3"><h1 class="font-weight-bold">Arizona</h1></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-12 mb-30">
-                                                    <div class="row">
-                                                        <div class="col-md-4"><h1 class="font-weight-bold">Last Test Result:</h1></div>
-                                                        <div class="col-md-6">
-                                                            <h1 class="customTextSize2">NEGATIVE</h1>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-12 mb-30 text-center">
-                                                    <p class="font-weight-bold mb-20 customTextSize1">Our Process</p>
+                                                <div class="col-md-12 mb-20 mt-20 text-center">
+                                                    <p class="font-weight-bold mb-30 customTextSize1">Our Process</p>
                                                     <div class="row">
                                                         <div class="col-md-2">
                                                             <img src="https://static.wixstatic.com/media/c86cbb_29e189db9e24431eac9c347b03503b43~mv2.png/v1/crop/x_12,y_436,w_477,h_337/fill/w_120,h_80,al_c,q_85,usm_0.66_1.00_0.01/Untitled%20design.webp" alt="" style="width: 120px; height: 86px; object-fit: cover; margin-bottom: 20px;">
