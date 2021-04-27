@@ -5,6 +5,16 @@
     <style>
         /* Loading Spinner */
         .spinner{margin:0;width:70px;height:18px;margin:-35px 0 0 -9px;position:absolute;top:50%;left:50%;text-align:center}.spinner > div{width:18px;height:18px;background-color:#333;border-radius:100%;display:inline-block;-webkit-animation:bouncedelay 1.4s infinite ease-in-out;animation:bouncedelay 1.4s infinite ease-in-out;-webkit-animation-fill-mode:both;animation-fill-mode:both}.spinner .bounce1{-webkit-animation-delay:-.32s;animation-delay:-.32s}.spinner .bounce2{-webkit-animation-delay:-.16s;animation-delay:-.16s}@-webkit-keyframes bouncedelay{0%,80%,100%{-webkit-transform:scale(0.0)}40%{-webkit-transform:scale(1.0)}}@keyframes bouncedelay{0%,80%,100%{transform:scale(0.0);-webkit-transform:scale(0.0)}40%{transform:scale(1.0);-webkit-transform:scale(1.0)}}
+
+        td
+        {
+            text-align: center !important;
+        }
+
+        .center {
+          margin-left: auto;
+          margin-right: auto;
+        }
     </style>
 
     <meta charset="UTF-8">
@@ -359,36 +369,43 @@
                                         </ul>
 
                                         <button class="btn btn-success btn-block customPaddingbtn">Schedule Test</button>
-                                        <div class="panel-content pad15A bg-white radius-bottom-all-4 mt-20">
+                                        <!--<div class="panel-content pad15A bg-white radius-bottom-all-4 mt-20">
                                             <div class="mrg15T mrg15B"></div>
                                             <blockquote class="">
                                                 <p class="customTextSize5 font-black mb-15">Upcoming Appointment</p>
                                                 <div class="botmBorder"></div>
-                                                <table class="table-condensed ml-80">
-                                                    <tbody>
-                                                        <tr>
-                                                            <th><span class="font-weight-bold customTextSize6">Location:</span></th>
-                                                            <td class="text-left customTextSize6">Test Location</td>
-                                                        </tr>
 
-                                                        <tr>
-                                                            <th><span class="font-weight-bold customTextSize6">Address:</span></th>
-                                                            <td class="text-left customTextSize6">Mukherjee chowk</td>
-                                                        </tr>
+                                                <div class="row justify-content-center">
+                                                    <div class="col-md-12 text-center">
+                                                        <table class="table-condensed center">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th><span class="font-weight-bold customTextSize6">Location:</span></th>
+                                                                    <td class="customTextSize6">Test Location</td>
+                                                                </tr>
 
-                                                        <tr>
-                                                            <th><span class="font-weight-bold customTextSize6">Date:</span></th>
-                                                            <td class="text-left customTextSize6">02-02-2021</td>
-                                                        </tr>
+                                                                <tr>
+                                                                    <th><span class="font-weight-bold customTextSize6">Address:</span></th>
+                                                                    <td class="customTextSize6">Mukherjee chowk</td>
+                                                                </tr>
 
-                                                        <tr>
-                                                            <th><span class="font-weight-bold customTextSize6">Time:</span></th>
-                                                            <td class="text-left customTextSize6">02:00pm - 02:30pm</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                                                <tr>
+                                                                    <th><span class="font-weight-bold customTextSize6">Date:</span></th>
+                                                                    <td class="customTextSize6">02-02-2021</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <th><span class="font-weight-bold customTextSize6">Time:</span></th>
+                                                                    <td class="customTextSize6">02:00pm - 02:30pm</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                
                                             </blockquote>
-                                        </div>
+                                        </div>-->
 
                                         <div class="panel-content pad15A bg-white radius-bottom-all-4 mt-20">
                                             <div class="clear profile-box">
@@ -436,26 +453,11 @@
                                                 </ul>
                                             </div>
                                             <div class="mrg15T mrg15B"></div>
-                                            <blockquote class="">
+                                            <blockquote class="font-black">
                                                 <p class="customTextSize5 font-black mb-20">360 Clinic</p>
-                                                <table class="table-condensed ml-80">
-                                                    <tbody>
-                                                        <tr>
-                                                            <th><span class="font-weight-bold customTextSize6">Email:</span></th>
-                                                            <td class="text-left customTextSize6">inquiries@360clinic.md</td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <th><span class="font-weight-bold customTextSize6">Website:</span></th>
-                                                            <td class="text-left customTextSize6">www.360clinic.md</td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <th><span class="font-weight-bold customTextSize6">Hotline:</span></th>
-                                                            <td class="text-left customTextSize6">1-800-446-8888</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                                <p><span class="font-weight-bold customTextSize6">Email:</span> <span class="customTextSize6">inquiries@360clinic.md</span></p>
+                                                <p><span class="font-weight-bold customTextSize6">Website:</span> <span class="customTextSize6">www.360clinic.md</span></p>
+                                                <p><span class="font-weight-bold customTextSize6">Hotline:</span> <span class=" customTextSize6">1-800-446-8888</span></p>
                                             </blockquote>
                                         </div>
                                     </div>
@@ -509,17 +511,17 @@
                                     <div class="tab-content">
                                         <div class="tab-pane fade" id="tab-example-1">
                                             <div class="alert alert-close alert-success">
-                                                        <a href="#" title="Close" class="glyph-icon alert-close-btn icon-remove"></a>
-                                                        <div class="bg-green alert-icon">
-                                                            <i class="glyph-icon icon-check"></i>
-                                                        </div>
-                                                        <div class="alert-content">
-                                                            <h4 class="alert-title">Example Infobox</h4>
-                                                            <p>Lorem ipsum dolor sic amet dixit tu...</p>
-                                                        </div>
+                                                <a href="#" title="Close" class="glyph-icon alert-close-btn icon-remove"></a>
+                                                <div class="bg-green alert-icon">
+                                                    <i class="glyph-icon icon-check"></i>
+                                                </div>
+                                                <div class="alert-content">
+                                                    <h4 class="alert-title">Example Infobox</h4>
+                                                    <p>Lorem ipsum dolor sic amet dixit tu...</p>
+                                                </div>
                                             </div>
                                             <div class="row">
-                                                        <div class="col-md-6">
+                                                <div class="col-md-6">
                                                             <div class="content-box mrg15B">
                                                                 <h3 class="content-box-header clearfix">
                                                                     Change Password
@@ -558,7 +560,7 @@
                                                                     <button class="btn btn-success">Update Password</button>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -610,10 +612,10 @@
                                                 <div class="col-md-12" style="margin-top: 20px;">
                                                     <div class="row">
                                                         <div class="col-md-3">
-                                                            <table class="table-responsive">
+                                                            <table class="table-condensed">
                                                                 <thead>
                                                                     <tr>
-                                                                        <th><h3 class="font-weight-bold mb-20">Patient Information</h3></th>
+                                                                        <th colspan="2"><h3 class="font-weight-bold mb-20">Patient Information</h3></th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -656,10 +658,10 @@
                                                         </div>
                                                         
                                                         <div class="col-md-3">
-                                                            <table class="table-responsive">
+                                                            <table class="table-condensed">
                                                                 <thead>
-                                                                    <tr>
-                                                                        <th><h3 class="font-weight-bold mb-20">Accession</h3></th>
+                                                                    <tr >
+                                                                        <th colspan="2"><h3 class="font-weight-bold mb-20">Accession</h3></th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -697,10 +699,10 @@
                                                         </div>
 
                                                         <div class="col-md-3">
-                                                            <table class="table-responsive">
+                                                            <table class="table-condensed">
                                                                 <thead>
                                                                     <tr>
-                                                                        <th><h3 class="font-weight-bold mb-20">Physician</h3></th>
+                                                                        <th  colspan="2"><h3 class="font-weight-bold mb-20">Physician</h3></th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -718,10 +720,10 @@
                                                         </div>
 
                                                         <div class="col-md-3">
-                                                            <table class="table-responsive">
+                                                            <table class="table-condensed">
                                                                 <thead>
                                                                     <tr>
-                                                                        <th><h3 class="font-weight-bold mb-20">Laboratory</h3></th>
+                                                                        <th  colspan="2"><h3 class="font-weight-bold mb-20">Laboratory</h3></th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -1139,22 +1141,63 @@
                                                 <div class="col-md-12">
                                                     <table class="table-condensed">
                                                         <tbody>
-                                                        <tr>
-                                                            <th><span class="font-weight-bold customTextSize7">Last Test Date:</span></th>
-                                                            <td class="customTextSize7">04/26/21</td>
-                                                        </tr>
+                                                            <tr>
+                                                                <th><span class="font-weight-bold customTextSize7">Last Test Date:</span></th>
+                                                                <td class="customTextSize7">04/26/21</td>
+                                                            </tr>
 
-                                                        <tr>
-                                                            <th><span class="font-weight-bold customTextSize7">Last Test Location:</span></th>
-                                                            <td class="customTextSize7">Arizona</td>
-                                                        </tr>
+                                                            <tr>
+                                                                <th><span class="font-weight-bold customTextSize7">Last Test Location:</span></th>
+                                                                <td class="customTextSize7">Arizona</td>
+                                                            </tr>
 
-                                                        <tr>
-                                                            <th><span class="font-weight-bold customTextSize7">Last Test Result:</span></th>
-                                                            <td class="customTextSize2">NEGATIVE</td>
-                                                        </tr>
+                                                            <tr>
+                                                                <th><span class="font-weight-bold customTextSize7">Last Test Result:</span></th>
+                                                                <td class="customTextSize2">NEGATIVE</td>
+                                                            </tr>
                                                         </tbody>
                                                     </table>
+                                                </div>
+                                                
+                                                <div class="col-md-12">
+                                                    <div class="botmBorder"></div>
+                                                    <p class="font-weight-bold mb-30 customTextSize1 text-success text-center">Upcoming Appointment</p>
+                                                    <div class="botmBorder"></div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <table class="table-condensed">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold customTextSize7">Location:</span></th>
+                                                                        <td class="customTextSize7 text-left">Test Location</td>
+                                                                    </tr>
+            
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold customTextSize7">Address:</span></th>
+                                                                        <td class="customTextSize7 text-left">Mukherjee chowk</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <table class="table-condensed">
+                                                                <tbody>
+            
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold customTextSize7">Date:</span></th>
+                                                                        <td class="customTextSize7  text-left">02-02-2021</td>
+                                                                    </tr>
+            
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold customTextSize7">Time:</span></th>
+                                                                        <td class="customTextSize7  text-left">02:00pm - 02:30pm</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="botmBorder"></div>
                                                 </div>
 
                                                 <div class="col-md-12 mb-20 mt-20 text-center">
