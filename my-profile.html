@@ -282,6 +282,27 @@
             font-size: 50px; 
             font-weight: bold;
         }
+
+        
+        #phoneOTP 
+        {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background-color: white;
+            margin-top: 20px;
+        }
+
+        
+        #emailOTP 
+        {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background-color: white;
+            margin-top: 20px;
+        }
+
         /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
         /* Portrait and Landscape */
@@ -394,7 +415,7 @@
 
         .socialBox
         {
-            display: block;
+            display: none;
         }
 
         .customPlacement
@@ -640,7 +661,7 @@
                                         </ul>
 
                                         <button class="btn btn-success btn-block customPaddingbtn">Schedule Test</button>
-                                        <div class="panel-content pad15A bg-white radius-bottom-all-4 mt-20 customPlacement">
+                                        <div class="panel-content pad15A bg-white radius-bottom-all-4 mt-20 socialBox">
                                             <div class="clear profile-box">
                                                 <ul class="nav nav-pills nav-justified">
                                                     <li>
@@ -1051,15 +1072,22 @@
                                                     <div class="form-group">
                                                         <label class="col-sm-3 control-label">Phone Number:</label>
                                                         <div class="col-sm-6">
-                                                            <input type="text" class="form-control" id="" placeholder="Phone Number...">
-                                                            <input id="phone" type="text" />
+                                                            <input type="text" class="form-control phone-inputmask" id="phone-mask" placeholder="Phone Number...">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <a href="#" class="btn btn-primary" onclick="FunctionPhone()">Verify Phone Number</a>
                                                         </div>
                                                     </div>
-                                                    <script>
-                                                        $(":input").inputmask();
 
-$("#phone").inputmask({"mask": "(999) 999-9999"});
-                                                    </script>
+                                                    <div class="form-group" id="phoneOTP" style="display: none;">
+                                                        <label class="col-sm-3 control-label">Enter OTP:</label>
+                                                        <div class="col-sm-6">
+                                                            <input type="text" class="form-control" id="" placeholder="Enter OTP...">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <a href="#" class="btn btn-primary">Submit</a>
+                                                        </div>
+                                                    </div>
 
                                                     <div class="form-group">
                                                         <label class="col-sm-3 control-label">Phone Type:</label>
@@ -1077,6 +1105,19 @@ $("#phone").inputmask({"mask": "(999) 999-9999"});
                                                         <label class="col-sm-3 control-label">Email:</label>
                                                         <div class="col-sm-6">
                                                             <input type="text" class="form-control" id="" placeholder="Email...">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <a href="#" class="btn btn-primary" onclick="FunctionEmail()">Verify Email</a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group" id="emailOTP" style="display: none;">
+                                                        <label class="col-sm-3 control-label">Enter OTP:</label>
+                                                        <div class="col-sm-6">
+                                                            <input type="text" class="form-control" id="" placeholder="Enter OTP...">
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                            <a href="#" class="btn btn-primary">Submit</a>
                                                         </div>
                                                     </div>
 
@@ -1201,129 +1242,137 @@ $("#phone").inputmask({"mask": "(999) 999-9999"});
                                                     <div class="form-group">
                                                         <label class="col-sm-3 control-label">Zip:</label>
                                                         <div class="col-sm-6">
-                                                            <input type="text" class="form-control" id="" placeholder="Zip...">
+                                                            <input type="text" class="form-control zip-inputmask mb-20" id="" placeholder="Zip...">
                                                         </div>
                                                     </div>
                                                 </form>
                                             </div>
 
                                             <div class="content-box">
-                                                <h2 class="font-weight-bold text-center" style="margin-top: 15px;">Insurance</h2>
+                                                <h2 class="font-weight-bold text-center mt-15">Insurance</h2>
                                                 <form class="form-horizontal pad15L pad15R bordered-row">
 
                                                     <div class="form-group remove-border">
                                                         <label class="col-sm-3 control-label">Insurance:</label>
                                                         <div class="col-sm-6">
-                                                            <select name="" id="" class="form-control">
+                                                            <select name="" id="optionSelector" class="form-control">
                                                                 <option value="">Select</option>
-                                                                <option value="Yes">Yes</option>
-                                                                <option value="No">No</option>
+                                                                <option value="yes">Yes</option>
+                                                                <option value="no">No</option>
                                                             </select>
                                                         </div>
                                                     </div>
 
-                                                    <div class="form-group">
-                                                        <label class="col-sm-3 control-label">Insurance Provider:</label>
-                                                        <div class="col-sm-6">
-                                                            <input type="text" class="form-control" id="" placeholder="Insurance Provider...">
+                                                    <!--YES-->
+                                                    <div id="yes" class="insuranceOption bordered-row" style="display:none">
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 control-label">Insurance Provider:</label>
+                                                            <div class="col-sm-6">
+                                                                <input type="text" class="form-control" id="" placeholder="Insurance Provider...">
+                                                            </div>
                                                         </div>
-                                                    </div>
 
-                                                    <div class="form-group">
-                                                        <label class="col-sm-3 control-label">Insurance Member ID:</label>
-                                                        <div class="col-sm-6">
-                                                            <input type="text" class="form-control" id="" placeholder="Insurance Member ID...">
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 control-label">Insurance Member ID:</label>
+                                                            <div class="col-sm-6">
+                                                                <input type="text" class="form-control" id="" placeholder="Insurance Member ID...">
+                                                            </div>
                                                         </div>
-                                                    </div>
 
-                                                    <div class="form-group">
-                                                        <label class="col-sm-3 control-label">Insurance Group Number:</label>
-                                                        <div class="col-sm-6">
-                                                            <input type="text" class="form-control" id="" placeholder="Insurance Group Number...">
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 control-label">Insurance Group Number:</label>
+                                                            <div class="col-sm-6">
+                                                                <input type="text" class="form-control" id="" placeholder="Insurance Group Number...">
+                                                            </div>
                                                         </div>
-                                                    </div>
 
-                                                    <div class="form-group">
-                                                        <label class="col-sm-3 control-label">Relationship to this Insured:</label>
-                                                        <div class="col-sm-6">
-                                                            <input type="text" class="form-control" id="" placeholder="Relationship to this Insured...">
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 control-label">Relationship to this Insured:</label>
+                                                            <div class="col-sm-6">
+                                                                <input type="text" class="form-control" id="" placeholder="Relationship to this Insured...">
+                                                            </div>
                                                         </div>
-                                                    </div>
 
-                                                    <div class="form-group">
-                                                        <label class="col-sm-3 control-label">Insurance Front Image:</label>
-                                                        <div class="col-sm-6">
-                                                            <div class="fileinput fileinput-new" data-provides="fileinput">
-                                                                <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
-                                                                <div>
-                                                                <span class="btn btn-default btn-file">
-                                                                    <span class="fileinput-new">Select image</span>
-                                                                    <span class="fileinput-exists">Change</span>
-                                                                    <input type="file" name="...">
-                                                                </span>
-                                                                    <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 control-label">Insurance Front Image:</label>
+                                                            <div class="col-sm-6">
+                                                                <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                                    <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
+                                                                    <div>
+                                                                    <span class="btn btn-default btn-file">
+                                                                        <span class="fileinput-new">Select image</span>
+                                                                        <span class="fileinput-exists">Change</span>
+                                                                        <input type="file" name="...">
+                                                                    </span>
+                                                                        <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 control-label">Insurance Back Image:</label>
+                                                            <div class="col-sm-6">
+                                                                <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                                    <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
+                                                                    <div>
+                                                                    <span class="btn btn-default btn-file">
+                                                                        <span class="fileinput-new">Select image</span>
+                                                                        <span class="fileinput-exists">Change</span>
+                                                                        <input type="file" name="...">
+                                                                    </span>
+                                                                        <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <!--YES-->
 
-                                                    <div class="form-group">
-                                                        <label class="col-sm-3 control-label">Insurance Back Image:</label>
-                                                        <div class="col-sm-6">
-                                                            <div class="fileinput fileinput-new" data-provides="fileinput">
-                                                                <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
-                                                                <div>
-                                                                <span class="btn btn-default btn-file">
-                                                                    <span class="fileinput-new">Select image</span>
-                                                                    <span class="fileinput-exists">Change</span>
-                                                                    <input type="file" name="...">
-                                                                </span>
-                                                                    <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                                    <!--NO-->
+                                                    <div id="no" class="insuranceOption bordered-row" style="display:none">
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 control-label">Driving License Number:</label>
+                                                            <div class="col-sm-6">
+                                                                <input type="text" class="form-control" id="" placeholder="Driving License Number...">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 control-label">Social Security Number:</label>
+                                                            <div class="col-sm-6">
+                                                                <input type="text" class="form-control ssn-inputmask" placeholder="Social Security Number...">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 control-label">Identification Type:</label>
+                                                            <div class="col-sm-6">
+                                                                <select name="identification_type" id="identification_type" class="form-control">
+                                                                    <option value="" selected="">Select</option>
+                                                                    <option value="Driver License">Driver License</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 control-label">DL Image:</label>
+                                                            <div class="col-sm-6">
+                                                                <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                                    <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
+                                                                    <div>
+                                                                    <span class="btn btn-default btn-file">
+                                                                        <span class="fileinput-new">Select image</span>
+                                                                        <span class="fileinput-exists">Change</span>
+                                                                        <input type="file" name="...">
+                                                                    </span>
+                                                                        <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-
-                                                    <div class="form-group">
-                                                        <label class="col-sm-3 control-label">Driving License Number:</label>
-                                                        <div class="col-sm-6">
-                                                            <input type="text" class="form-control" id="" placeholder="Driving License Number...">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label class="col-sm-3 control-label">Social Security Number:</label>
-                                                        <div class="col-sm-6">
-                                                            <input type="text" class="form-control" id="" placeholder="Social Security Number...">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label class="col-sm-3 control-label">Identification Type:</label>
-                                                        <div class="col-sm-6">
-                                                            <select name="identification_type" id="identification_type" class="form-control">
-                                                                <option value="" selected="">Select</option>
-                                                                <option value="Driver License">Driver License</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label class="col-sm-3 control-label">DL Image:</label>
-                                                        <div class="col-sm-6">
-                                                            <div class="fileinput fileinput-new" data-provides="fileinput">
-                                                                <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
-                                                                <div>
-                                                                <span class="btn btn-default btn-file">
-                                                                    <span class="fileinput-new">Select image</span>
-                                                                    <span class="fileinput-exists">Change</span>
-                                                                    <input type="file" name="...">
-                                                                </span>
-                                                                    <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    <!--NO-->
                                                             
                                                 </form>
                                             </div>
@@ -1543,6 +1592,39 @@ $("#phone").inputmask({"mask": "(999) 999-9999"});
             });
 
         </script>
+
+        <script>
+            $(function() {
+                $('#optionSelector').change(function(){
+                    $('.insuranceOption').hide();
+                    $('#' + $(this).val()).show();
+                });
+            });
+        </script>
+        
+        <script>
+            function FunctionPhone() {
+              var x = document.getElementById("phoneOTP");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+        </script>
+        
+        <script>
+            function FunctionEmail() {
+              var x = document.getElementById("emailOTP");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+        </script>
+        <script src="assets/inputmask/dist/mask.init.js"></script>
+        <script src="assets/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
     </div>
 </body>
 </html>
