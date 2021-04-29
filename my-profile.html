@@ -257,12 +257,269 @@
              font-size: 32px; 
          }
          
+         .customTextSize8
+         {
+             font-size: 32px; 
+         }
+         
         .customPaddingbtn
         {
             padding-top: 20px;
             padding-bottom: 50px;
             font-size: 30px;
             font-weight: 800;
+        }
+
+        .resultimgSize
+        {
+            width: 80px; 
+            height: 80px;
+        }
+
+        .resultSize
+        {
+            color: #00b44e; 
+            font-size: 50px; 
+            font-weight: bold;
+        }
+        /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+        /* Portrait and Landscape */
+        @media only screen 
+        and (min-device-width: 375px) 
+        and (max-device-width: 667px) 
+        and (-webkit-min-device-pixel-ratio: 2) 
+        { 
+
+        .bordered-row > .form-group 
+        {
+            padding: 0px 0;
+        }
+
+        .customTextSize7
+        {
+            font-size: 15px !important;
+        }
+
+        .customTextSize8
+        {
+            font-size: 18px !important;
+        }
+
+        .mbp-20
+        {
+            margin-bottom: -20px;
+        }
+
+        } 
+
+        /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+        /* Portrait and Landscape */
+        @media only screen 
+        and (min-device-width: 414px) 
+        and (max-device-width: 736px) 
+        and (-webkit-min-device-pixel-ratio: 3) 
+        { 
+
+        .bordered-row > .form-group 
+        {
+            padding: 0px 0;
+        }
+
+        .customTextSize7
+        {
+            font-size: 15px !important;
+        }
+
+        .customTextSize8
+        {
+            font-size: 18px !important;
+        }
+
+        .mbp-20
+        {
+            margin-bottom: -20px;
+        }
+
+        }
+
+        /* ----------- iPhone X ----------- */
+
+        /* Portrait and Landscape */
+        @media only screen 
+        and (min-device-width: 375px) 
+        and (max-device-width: 812px) 
+        and (-webkit-min-device-pixel-ratio: 3) 
+        { 
+
+        .bordered-row > .form-group 
+        {
+            padding: 0px 0;
+        }
+
+        .customTextSize7
+        {
+            font-size: 15px !important;
+        }
+
+        .customTextSize8
+        {
+            font-size: 18px !important;
+        }
+
+        .mbp-20
+        {
+            margin-bottom: -20px;
+        }
+
+        .resultimgSize
+        {
+            width: 50px; 
+            height: 50px;
+        }
+
+        .resultSize
+        {
+            font-size: 40px; 
+            margin-top: -67px;
+            margin-left: 50px;
+        }
+
+        .resultSizeP
+        {
+                margin-left: -15px;
+                text-align: justify;
+        }
+
+        .socialBox
+        {
+            display: none;
+        }
+
+
+        }
+
+
+        /* ----------- iPad 1, 2, Mini and Air ----------- */
+
+        /* Portrait and Landscape */
+        @media only screen 
+        and (min-device-width: 768px) 
+        and (max-device-width: 1024px) 
+        and (-webkit-min-device-pixel-ratio: 1) {
+            
+            .TR{
+                text-align: left !important;
+            }
+
+            .mlp-90
+            {
+                margin-left: 90px !important;
+            }
+
+        }
+
+        /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+        /* Portrait and Landscape */
+        @media only screen 
+        and (min-device-width: 768px) 
+        and (max-device-width: 1024px) 
+        and (-webkit-min-device-pixel-ratio: 2) {
+            
+            .TR{
+                text-align: left !important;
+            }
+
+            .mlp-90
+            {
+                margin-left: 90px !important;
+            }
+
+            .socialBox
+            {
+                display: none;
+            }
+
+            .resultimgSize {
+                width: 60px;
+                height: 60px;
+            }
+
+            .resultSize {
+                margin-left: 90px;
+                margin-top: -56px;
+            }
+
+        }
+
+        /* ----------- iPad Pro 10.5" ----------- */
+
+        /* Portrait and Landscape */
+        @media only screen 
+        and (min-device-width: 834px) 
+        and (max-device-width: 1112px)
+        and (-webkit-min-device-pixel-ratio: 2) {
+            .customTextSize8 {
+                font-size: 18px !important;
+            }
+
+            .customTextSize6 {
+                font-size: 15px;
+            }
+            
+            .TR{
+                text-align: left !important;
+            }
+
+            .resultimgSize {
+                width: 70px;
+                height: 70px;
+            }
+
+            .resultSize {
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+
+        }
+
+        /* ----------- iPad Pro 12.9" ----------- */
+
+        /* Portrait and Landscape */
+        @media only screen 
+        and (min-device-width: 1024px) 
+        and (max-device-width: 1366px)
+        and (-webkit-min-device-pixel-ratio: 2) {
+            .customTextSize8 {
+                font-size: 18px !important;
+            }
+
+            .customTextSize6 {
+                font-size: 15px;
+            }
+            
+            .TR{
+                text-align: left !important;
+            }
+            
+
+        .socialBox
+        {
+            display: block;
+        }
+
+        .resultimgSize {
+            width: 70px;
+            height: 70px;
+        }
+
+        .resultSize {
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+
         }
     </style>
 
@@ -407,7 +664,7 @@
                                             </blockquote>
                                         </div>-->
 
-                                        <div class="panel-content pad15A bg-white radius-bottom-all-4 mt-20">
+                                        <div class="panel-content pad15A bg-white radius-bottom-all-4 mt-20 socialBox">
                                             <div class="clear profile-box">
                                                 <ul class="nav nav-pills nav-justified">
                                                     <li>
@@ -759,12 +1016,12 @@
 
                                                 <div class="col-md-12" style="margin-bottom: 20px;">
                                                     <div class="col-md-2">
-                                                        <img width="80" height="80" src="users/img/negative.PNG"  class="mt-3">
+                                                        <img src="users/img/negative.PNG"  class="mt-3 resultimgSize">
                                                     </div>
                                                     <div class="col-md-10">
                                                         <div>
-                                                            <h3 style="color: #00b44e; font-size: 50px; font-weight: bold;">NEGATIVE</h3>
-                                                            <p>A negative result means that the virus was not detected in the sample you provided.
+                                                            <h3 class="resultSize" >NEGATIVE</h3>
+                                                            <p class="resultSizeP">A negative result means that the virus was not detected in the sample you provided.
                                                                 There suit suggests you were negative at the time of testing</p>
                                                         </div>
                                                     </div>
@@ -1143,12 +1400,12 @@
                                                         <tbody>
                                                             <tr>
                                                                 <th><span class="font-weight-bold customTextSize7">Last Test Date:</span></th>
-                                                                <td class="customTextSize7">04/26/21</td>
+                                                                <td class="customTextSize7 text-right">04/26/21</td>
                                                             </tr>
 
                                                             <tr>
                                                                 <th><span class="font-weight-bold customTextSize7">Last Test Location:</span></th>
-                                                                <td class="customTextSize7">Arizona</td>
+                                                                <td class="customTextSize7 text-right">Arizona</td>
                                                             </tr>
 
                                                             <tr>
@@ -1164,16 +1421,16 @@
                                                     <p class="font-weight-bold mb-30 customTextSize1 text-success text-center">Upcoming Appointment</p>
                                                     <div class="row">
                                                         <div class="col-md-6">
-                                                            <table class="table-condensed">
+                                                            <table class="table-condensed mbp-20">
                                                                 <tbody>
                                                                     <tr>
-                                                                        <th><span class="font-weight-bold customTextSize7">Location:</span></th>
-                                                                        <td class="customTextSize7 text-left">Test Location</td>
+                                                                        <th><span class="font-weight-bold customTextSize8">Location:</span></th>
+                                                                        <td class="customTextSize8 text-left TR">Test Location</td>
                                                                     </tr>
             
                                                                     <tr>
-                                                                        <th><span class="font-weight-bold customTextSize7">Address:</span></th>
-                                                                        <td class="customTextSize7 text-left">Mukherjee chowk</td>
+                                                                        <th><span class="font-weight-bold customTextSize8">Address:</span></th>
+                                                                        <td class="customTextSize8 text-left TR">Mukherjee chowk</td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
@@ -1184,13 +1441,13 @@
                                                                 <tbody>
             
                                                                     <tr>
-                                                                        <th><span class="font-weight-bold customTextSize7">Date:</span></th>
-                                                                        <td class="customTextSize7  text-left">02-02-2021</td>
+                                                                        <th><span class="font-weight-bold customTextSize8">Date:</span></th>
+                                                                        <td class="customTextSize8  text-left TR">02-02-2021</td>
                                                                     </tr>
             
                                                                     <tr>
-                                                                        <th><span class="font-weight-bold customTextSize7">Time:</span></th>
-                                                                        <td class="customTextSize7  text-left">02:00pm - 02:30pm</td>
+                                                                        <th><span class="font-weight-bold customTextSize8">Time:</span></th>
+                                                                        <td class="customTextSize8  text-left TR">02:00pm - 02:30pm</td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
