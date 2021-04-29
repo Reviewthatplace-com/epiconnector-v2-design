@@ -146,6 +146,7 @@
     <script type="text/javascript" src="assets/js-core/jquery-ui-widget.js"></script>
     <script type="text/javascript" src="assets/js-core/jquery-ui-mouse.js"></script>
     <script type="text/javascript" src="assets/js-core/jquery-ui-position.js"></script>
+    <script type="text/javascript" src="assets/jquery/jquery-3.2.1.min.js"></script>
     <!--<script type="text/javascript" src="assets/js-core/transition.js"></script>-->
     <script type="text/javascript" src="assets/js-core/modernizr.js"></script>
     <script type="text/javascript" src="assets/js-core/jquery-cookie.js"></script>
@@ -394,8 +395,14 @@
 
         .socialBox
         {
-            display: none;
+            display: block;
         }
+
+        .customPlacement
+        {
+            bottom: 0 !important;
+        }
+
 
 
         }
@@ -584,7 +591,7 @@
                                         </div>
                                          
                                         <ul class="list-group row list-group-icons mt-20">
-                                            <li class="col-md-12 mb-20 active">
+                                            <li class="col-md-6 mb-20 active">
                                                 <a href="#tab-example-5" data-toggle="tab" class="list-group-item">
                                                     <i class="fas fa-user fa-2x"></i>
                                                     <br>
@@ -623,48 +630,18 @@
                                                     Account Settings
                                                 </a>
                                             </li>
+                                        
+                                            <li class="col-md-6">
+                                                <a href="#" class="list-group-item">
+                                                    <i class="fa fa-power-off fa-2x" aria-hidden="true"></i>
+                                                    <br>
+                                                    Logout
+                                                </a>
+                                            </li>
                                         </ul>
 
                                         <button class="btn btn-success btn-block customPaddingbtn">Schedule Test</button>
-                                        <!--<div class="panel-content pad15A bg-white radius-bottom-all-4 mt-20">
-                                            <div class="mrg15T mrg15B"></div>
-                                            <blockquote class="">
-                                                <p class="customTextSize5 font-black mb-15">Upcoming Appointment</p>
-                                                <div class="botmBorder"></div>
-
-                                                <div class="row justify-content-center">
-                                                    <div class="col-md-12 text-center">
-                                                        <table class="table-condensed center">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <th><span class="font-weight-bold customTextSize6">Location:</span></th>
-                                                                    <td class="customTextSize6">Test Location</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                    <th><span class="font-weight-bold customTextSize6">Address:</span></th>
-                                                                    <td class="customTextSize6">Mukherjee chowk</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                    <th><span class="font-weight-bold customTextSize6">Date:</span></th>
-                                                                    <td class="customTextSize6">02-02-2021</td>
-                                                                </tr>
-
-                                                                <tr>
-                                                                    <th><span class="font-weight-bold customTextSize6">Time:</span></th>
-                                                                    <td class="customTextSize6">02:00pm - 02:30pm</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-
-                                                
-                                            </blockquote>
-                                        </div>-->
-
-                                        <div class="panel-content pad15A bg-white radius-bottom-all-4 mt-20 socialBox">
+                                        <div class="panel-content pad15A bg-white radius-bottom-all-4 mt-20 customPlacement">
                                             <div class="clear profile-box">
                                                 <ul class="nav nav-pills nav-justified">
                                                     <li>
@@ -721,49 +698,12 @@
                                 </div>
                             </div>
 
+                            <div class="col-md-4">
+
+                            </div>
+
                             <div class="col-md-8">
                                 <div class="example-box-wrapper">
-                                    <!--<ul class="list-group row list-group-icons">
-                                                <li class="col-md-2 active">
-                                                    <a href="#tab-example-5" data-toggle="tab" class="list-group-item">
-                                                        <i class="fas fa-user fa-2x"></i>
-                                                        <br>
-                                                        Welcome
-                                                    </a>
-                                                </li>
-                                                <li class="col-md-2">
-                                                    <a href="#tab-example-3" data-toggle="tab" class="list-group-item">
-                                                        <i class="fas fa-vial fa-2x"></i>
-                                                        <br>
-                                                        Last Test
-                                                    </a>
-                                                </li>
-
-                                                <li class="col-md-2">
-                                                    <a href="#tab-example-2" data-toggle="tab" class="list-group-item">
-                                                        <i class="fas fa-history fa-2x"></i>
-                                                        <br>
-                                                        Testing History
-                                                    </a>
-                                                </li>
-                                                
-
-                                                <li class="col-md-2">
-                                                    <a href="#tab-example-4" data-toggle="tab" class="list-group-item">
-                                                        <i class="fas fa-user-cog fa-2x"></i>
-                                                        <br>
-                                                        Personal Information
-                                                    </a>
-                                                </li>
-
-                                                <li class="col-md-2">
-                                                    <a href="#tab-example-1" data-toggle="tab" class="list-group-item">
-                                                        <i class="fa fa-cog fa-2x" aria-hidden="true"></i>
-                                                        <br>
-                                                        Account Settings
-                                                    </a>
-                                                </li>
-                                            </ul>-->
                                             
                                     <div class="tab-content">
                                         <div class="tab-pane fade" id="tab-example-1">
@@ -779,44 +719,44 @@
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                            <div class="content-box mrg15B">
-                                                                <h3 class="content-box-header clearfix">
-                                                                    Change Password
-                                                                    <div class="font-size-11 float-right">
-                                                                        <a href="#" title="">
-                                                                            <i class="glyph-icon mrg5R opacity-hover icon-plus"></i>
-                                                                        </a>
-                                                                        <a href="#" title="">
-                                                                            <i class="glyph-icon opacity-hover icon-cog"></i>
-                                                                        </a>
-                                                                    </div>
-                                                                </h3>
-                                                                <div class="content-box-wrapper pad0T clearfix">
-                                                                    <form class="form-horizontal pad15L pad15R bordered-row">
-                                                                        <div class="form-group">
-                                                                            <label class="col-sm-6 control-label">Old password:</label>
-                                                                            <div class="col-sm-6">
-                                                                                <input type="text" class="form-control" id="" placeholder="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="form-group">
-                                                                            <label class="col-sm-6 control-label">New password:</label>
-                                                                            <div class="col-sm-6">
-                                                                                <input type="text" class="form-control" id="" placeholder="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="form-group">
-                                                                            <label class="col-sm-6 control-label">Repeat password:</label>
-                                                                            <div class="col-sm-6">
-                                                                                <input type="text" class="form-control" id="" placeholder="">
-                                                                            </div>
-                                                                        </div>
-                                                                    </form>
-                                                                </div>
-                                                                <div class="button-pane mrg20T">
-                                                                    <button class="btn btn-success">Update Password</button>
-                                                                </div>
+                                                    <div class="content-box mrg15B">
+                                                        <h3 class="content-box-header clearfix">
+                                                            Change Password
+                                                            <div class="font-size-11 float-right">
+                                                                <a href="#" title="">
+                                                                    <i class="glyph-icon mrg5R opacity-hover icon-plus"></i>
+                                                                </a>
+                                                                <a href="#" title="">
+                                                                    <i class="glyph-icon opacity-hover icon-cog"></i>
+                                                                </a>
                                                             </div>
+                                                        </h3>
+                                                        <div class="content-box-wrapper pad0T clearfix">
+                                                            <form class="form-horizontal pad15L pad15R bordered-row">
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-6 control-label">Old password:</label>
+                                                                    <div class="col-sm-6">
+                                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-6 control-label">New password:</label>
+                                                                    <div class="col-sm-6">
+                                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-6 control-label">Repeat password:</label>
+                                                                    <div class="col-sm-6">
+                                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="button-pane mrg20T">
+                                                            <button class="btn btn-success">Update Password</button>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -897,7 +837,12 @@
                                                                     </tr>
                 
                                                                     <tr>
-                                                                        <th><span class="font-weight-bold">PASSPORT/DRIVERS LICENSE NUMBER:</span></th>
+                                                                        <th><span class="font-weight-bold">PASSPORT:</span></th>
+                                                                        <td class="text-left">123123</td>
+                                                                    </tr>
+                
+                                                                    <tr>
+                                                                        <th><span class="font-weight-bold">DRIVERS LICENSE NUMBER:</span></th>
                                                                         <td class="text-left">123123</td>
                                                                     </tr>
                 
@@ -913,8 +858,8 @@
                                                                 </tbody>
                                                             </table>
                                                         </div>
-                                                        
-                                                        <div class="col-md-3">
+
+                                                        <div class="col-md-3 col-sm-6">
                                                             <table class="table-condensed">
                                                                 <thead>
                                                                     <tr >
@@ -1043,6 +988,7 @@
 
                                         <div class="tab-pane pad0A fade" id="tab-example-4">
                                             <div class="content-box">
+                                                <h2 class="font-weight-bold text-center" style="margin-top: 15px; font-weight: 800;">Demographics</h2>
                                                 <form class="form-horizontal pad15L pad15R bordered-row">
                                                     <div class="form-group remove-border">
                                                         <label class="col-sm-3 control-label">First Name:</label>
@@ -1107,8 +1053,14 @@
                                                         <label class="col-sm-3 control-label">Phone Number:</label>
                                                         <div class="col-sm-6">
                                                             <input type="text" class="form-control" id="" placeholder="Phone Number...">
+                                                            <input id="phone" type="text" />
                                                         </div>
                                                     </div>
+                                                    <script>
+                                                        $(":input").inputmask();
+
+$("#phone").inputmask({"mask": "(999) 999-9999"});
+                                                    </script>
 
                                                     <div class="form-group">
                                                         <label class="col-sm-3 control-label">Phone Type:</label>
@@ -1253,8 +1205,14 @@
                                                             <input type="text" class="form-control" id="" placeholder="Zip...">
                                                         </div>
                                                     </div>
+                                                </form>
+                                            </div>
 
-                                                    <div class="form-group">
+                                            <div class="content-box">
+                                                <h2 class="font-weight-bold text-center" style="margin-top: 15px;">Insurance</h2>
+                                                <form class="form-horizontal pad15L pad15R bordered-row">
+
+                                                    <div class="form-group remove-border">
                                                         <label class="col-sm-3 control-label">Insurance:</label>
                                                         <div class="col-sm-6">
                                                             <select name="" id="" class="form-control">
@@ -1369,27 +1327,17 @@
                                                     </div>
                                                             
                                                 </form>
+                                            </div>
 
-                                                <div class="button-pane mrg20T">
-                                                    <button class="btn btn-info">Save</button>
-                                                    <button class="btn btn-link font-gray-dark">Cancel</button>
-                                                </div>
+
+                                            <div class="button-pane mrg20T">
+                                                <button class="btn btn-info">Save</button>
+                                                <button class="btn btn-link font-gray-dark">Cancel</button>
                                             </div>
                                         </div>
 
                                         <div class="tab-pane fade  active in" id="tab-example-5">
                                             <div class="row content-box pad25A">
-                                               <!--<div class="col-md-12">
-                                                    <div class="row">
-                                                        <div class="col-lg-2">
-                                                            <img style="height: 70px; margin-bottom: 20px;" src="users/img/logo.png" alt="" id="logo" class="mt-3">
-                                                        </div>
-                                                        <div class="col-md-12">
-                                                            <p class="font-weight-bold font-size-26">Born From <span class="customColor">Care</span>, Treated through <span class="customColor">Compassion</span>, Built for <span class="customColor">Community</span></p>
-                                                        </div>
-                                                    </div>
-                                                </div>-->
-
                                                 <div class="col-md-12">
                                                     <p class="font-weight-bold customTextSize">Welcome Ravi</p>
                                                     <div class="botmBorder"></div>
