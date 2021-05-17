@@ -108,7 +108,7 @@ function heroMap(_latitude,_longitude, element, markerTarget, sidebarResultTarge
                 if( markers[i]["featured"] == 1 ){
                     markerContent.innerHTML =
                     '<div class="marker" data-id="'+ markers[i]["id"] +'" data-url="'+ markers[i]["url"] +'" data-color="'+ color +'" data-i="'+ i +'">' +
-                        '<div class="title">'+ markers[i]["title"] +'</div>' +
+                        '<div class="title">'+ '1' +'</div>' +
                         '<div class="marker-wrapper">' +
                             '<div class="tag"><i class="fa fa-check"></i></div>' +
                             '<div class="pin">' +
@@ -120,7 +120,7 @@ function heroMap(_latitude,_longitude, element, markerTarget, sidebarResultTarge
                 else {
                     markerContent.innerHTML =
                         '<div class="marker" data-id="'+ markers[i]["id"] +'" data-url="'+ markers[i]["url"] +'"  data-color="'+ color +'" data-i="'+ i +'">' +
-                            '<div class="title">'+ markers[i]["title"] +'</div>' +
+                            '<div class="title">'+ '1' +'</div>' +
                             '<div class="marker-wrapper">' +
                                 '<div class="pin">' +
                                 '<div class="image" style="background-image: url('+ thumbnailImage +');"></div>' +
