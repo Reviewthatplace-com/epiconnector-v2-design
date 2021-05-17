@@ -390,7 +390,23 @@
                                                             <td>10/02/2021</td>
                                                             <td>Negative</td>
                                                             <td>
-                                                                <a href="">View</a>
+                                                                <a href="#" data-toggle="modal" data-target="#viewTest">View</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Test Location</td>
+                                                            <td>10/02/2021</td>
+                                                            <td>Positive</td>
+                                                            <td>
+                                                                <a href="#" data-toggle="modal" data-target="#viewTest">View</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Test Location</td>
+                                                            <td>10/02/2021</td>
+                                                            <td>Retest</td>
+                                                            <td>
+                                                                <a href="#" data-toggle="modal" data-target="#viewTest">View</a>
                                                             </td>
                                                         </tr>
                                                     </tbody>
@@ -1109,6 +1125,238 @@
                 </div>
             </div>
         </div>
+
+        <!-- VewResult Modal Start -->
+          <div class="modal fade" id="viewTest" tabindex="-1" role="dialog" aria-labelledby="viewTestLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title font-weight-bold" id="viewTestLabel">View Result</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row content-box pad25A">
+                        <div class="col-xl-12">      
+                            <div class="row">
+                                <div class="col-lg-6 col-xs-6">
+                                    <img style="height: 70px;" src="users/img/logo.png" alt="" id="logo" class="mt-3">
+                                </div>
+                                <div class="col-lg-6 col-xs-6 text-right">
+                                    <img width="100" height="100" src="users/img/360qr.png" alt="" id="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="botmBorder"></div>
+                        </div>
+
+                        <div class="col-md-12" style="margin-top: 20px;">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <table class="table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2"><h3 class="font-weight-bold mb-20">Patient Information</h3></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th><span class="font-weight-bold">Full Name:</span></th>
+                                                <td class="text-left">Ravi Agrawal</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th><span class="font-weight-bold">DOB:</span></th>
+                                                <td class="text-left">123123</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th><span class="font-weight-bold">Patient ID:</span></th>
+                                                <td class="text-left">123123</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th><span class="font-weight-bold">Address:</span></th>
+                                                <td class="text-left">123123</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th><span class="font-weight-bold">PASSPORT:</span></th>
+                                                <td class="text-left">123123</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th><span class="font-weight-bold">DRIVERS LICENSE NUMBER:</span></th>
+                                                <td class="text-left">123123</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th><span class="font-weight-bold">Phone:</span></th>
+                                                <td class="text-left">123123</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th><span class="font-weight-bold">Email:</span></th>
+                                                <td class="text-left">123123</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <table class="table-condensed">
+                                        <thead>
+                                            <tr >
+                                                <th colspan="2"><h3 class="font-weight-bold mb-20">Accession</h3></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th><span class="font-weight-bold">Test Kit#:</span></th>
+                                                <td class="text-left">asdasdasd</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th><span class="font-weight-bold">Appointment ID:</span></th>
+                                                <td class="text-left">asdasdasd</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th><span class="font-weight-bold">Test Type:</span></th>
+                                                <td class="text-left">asdasdasd</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th><span class="font-weight-bold">Collection Type:</span></th>
+                                                <td class="text-left">asdasdasd</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th><span class="font-weight-bold">Collected Date:</span></th>
+                                                <td class="text-left">asdasdasd</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th><span class="font-weight-bold">Result Date:</span></th>
+                                                <td class="text-left">asdasdasd</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <table class="table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th  colspan="2"><h3 class="font-weight-bold mb-20">Physician</h3></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th><span class="font-weight-bold">Name of Provider:</span></th>
+                                                <td class="text-left">Dr. Nguyen, Linh</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th><span class="font-weight-bold">Location Name:</span></th>
+                                                <td class="text-left">123123</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <table class="table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th  colspan="2"><h3 class="font-weight-bold mb-20">Laboratory</h3></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th><span class="font-weight-bold">Testing Lab:</span></th>
+                                                <td class="text-left">asdasdasd</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th><span class="font-weight-bold">CAP#:</span></th>
+                                                <td class="text-left">asdasdasd</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th><span class="font-weight-bold">CLIA#:</span></th>
+                                                <td class="text-left">asdasdasd</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th><span class="font-weight-bold">Laboratory Director#:</span></th>
+                                                <td class="text-left">asdasdasd</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="botmBorder"></div>
+                        </div>
+                                
+
+                        <div class="col-md-12" style="margin-bottom: 20px;">
+                            <div class="col-md-2">
+                                <img src="users/img/negative.PNG"  class="mt-3 resultimgSize">
+                            </div>
+                            <div class="col-md-10">
+                                <div>
+                                    <h3 class="resultSize" >NEGATIVE</h3>
+                                    <p class="resultSizeP">A negative result means that the virus was not detected in the sample you provided.
+                                        There suit suggests you were negative at the time of testing</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="users/img/positive.PNG"  class="mt-3 resultimgSize">
+                            </div>
+                            <div class="col-md-10">
+                                <div>
+                                    <h3 class="resultSize" >POSITIVE</h3>
+                                    <p class="resultSizeP">A positive result means that the virus was detected in the sample you provided.
+                                        There suit suggests you were positive at the time of testing</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="users/img/retest.png"  class="mt-3 resultimgSize">
+                            </div>
+                            <div class="col-md-10">
+                                <div>
+                                    <h3 class="resultSize" >Retest</h3>
+                                    <p class="resultSizeP">A retest result means that the sample you provided was insufficient.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="margin-bottom: 20px;">
+                        </div>
+
+                        <h4 class="font-weight-bold">HOW ACCURATE IS THE TEST?</h4>
+                        <p>The sensitivity of the test refers to the false negative rate and is expressed as a percentage. The PCR test for antigens has a minimum sensitivity of 98% if performed correctly. This means that, if performed correctly, out of every 100 people who have virus antigen on the swab, 2 people will falsely be given a negative result.</p>
+
+                        <h4 class="font-weight-bold" style="margin-top: 20px;">WHAT DO MY RESULTS MEAN?</h4>
+                        <p>A negative PCR result could mean that you are not currently infected by the virus. As you can see from the sensitivity, if the swab is performed correctly, it is highly likely that you do not carry the virus. However, the swab is difficult to perform and a poor quality sample reduces the sensitivity and therefore likelihood of false negative result. Alternatively, the virus may not be present at the site the sample was taken from. Timing may also be an issue: it could be too early or too late in the infection to detect replicating virus.</p>
+
+                        <div class="botmBorder"></div>
+
+                        <h3 class="font-weight-bold">LIMITATIONS</h3>
+
+                        <p>All laboratory tests have limitations. Test results and interpretation are based on the proper identification of the submitted specimen. In very rare instances, errors may result due to mix-up or co-mingling of specimens. Positive results do not imply that there are no other contributions, genetic or otherwise, to the patient's current health state, and negative results do not rule out infection entirely. This test is only valid for the detection of the SARS-CoV-2 virus. Efforts have been made in the design of this test to minimize the chances of a false positive result due to the presence of other infectious agents, but this cannot be ruled out. False negative results may occur if the virus is not present in the tested specimen or is present at a very low level.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- VewResult Modal End -->
 
         <!-- WIDGETS -->
         <script type="text/javascript" src="assets/bootstrap/js/bootstrap.js"></script>
