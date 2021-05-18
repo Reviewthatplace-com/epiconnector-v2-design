@@ -110,26 +110,27 @@ function heroMap(_latitude,_longitude, element, markerTarget, sidebarResultTarge
 
 
 
-                if( markers[i]["featured"] == 1 ){
+                if( markers[i]["external_link"] == '' ){
+
                     markerContent.innerHTML =
-                    '<div class="marker" data-id="'+ markers[i]["id"] +'" data-url="'+ markers[i]["url"] +'" data-color="'+ color +'" data-i="'+ i +'">' +
-                        '<div class="title">'+ '1' +'</div>' +
+                        '<div class="marker" title="' + markers[i]["location_name"] + '" data-id="'+ markers[i]["id"] +'" data-url="'+ markers[i]["description"] +'" data-color="'+ color +'" data-i="'+ i +'">' +
+                        // '<div class="title">'+  +'</div>' +
                         '<div class="marker-wrapper">' +
-                            '<div class="tag"><i class="fa fa-check"></i></div>' +
-                            '<div class="pin">' +
-                                '<div class="image" style="background-image: url('+ thumbnailImage +');"></div>' +
-                            '</div>' +
+                        '<div class="tag"><i class="fa fa-check"></i></div>' +
+                        '<div class="pin">' +
+                        '<div class="image" style="text-align: center; padding-top: 5px; color: #ffffff; font-weight: bolder; font-size: large">'+ (i+1) +'</div>' +
                         '</div>' +
-                    '</div>';
+                        '</div>' +
+                        '</div>';
                 }
                 else {
+
                     markerContent.innerHTML =
-                        '<div class="marker" data-id="'+ markers[i]["id"] +'" data-url="'+ markers[i]["url"] +'"  data-color="'+ color +'" data-i="'+ i +'">' +
-                            '<div class="title">'+ '1' +'</div>' +
-                            '<div class="marker-wrapper">' +
-                                '<div class="pin">' +
-                                '<div class="image" style="background-image: url('+ thumbnailImage +');"></div>' +
-                            '</div>' +
+                        '<div class="marker" title="' + markers[i]["location_name"] + '" data-id="'+ markers[i]["id"] +'" data-url="'+ markers[i]["description"] +'"  data-color="'+ color +'" data-i="'+ i +'">' +
+                        '<div class="marker-wrapper">' +
+                        '<div class="pin">' +
+                        '<div class="image" style="text-align: center; padding-top: 5px; color: white; font-weight: bolder; font-size: large">'+ (i+1) +'</div>' +
+                        '</div>' +
                         '</div>';
                 }
 
