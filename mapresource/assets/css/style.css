@@ -1257,7 +1257,7 @@ body.nav-btn-only #page-header .primary-nav ul li .nav-wrapper ul li:hover {
   width: 100%;
 }
 .hero-section .results-wrapper .result-item > a .result-item-detail .description {
-  padding-left: 140px;
+  padding-left: 0px;
 }
 .hero-section .results-wrapper .result-item > a .result-item-detail .description h5 {
   font-size: 14px;
